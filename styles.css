@@ -1,0 +1,39 @@
+body {
+    background-image: url('sky.jpg');
+}
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: -1px;
+    line-height: 0.8;
+    color: rgb(255, 255, 0);
+}
+
+a {
+        text-decoration: none;
+}
+
+.week1 {
+    width: 200px;
+    height: 100px;
+    background-color: #fcffa8;
+    border: 5px solid #86e5ff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-left: 3vw;
+    margin-top: 5vh;
+}
+
+.week1 h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: -1px;
+    line-height: 0.8;
+    color: rgb(224, 0, 0);
+}

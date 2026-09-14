@@ -1,11 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8" />
-    <title>Week 1</title>
-        <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Week 1</h1>
+  <div class="gallery-grid">
+<script>
+  const grid = document.currentScript.parentElement;
+  const indices = Array.from({length: 50}, (_, i) => i + 1);
+
+  for (let i = indices.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [indices[i], indices[j]] = [indices[j], indices[i]];
+  }
+
+  indices.forEach(num => {
+    const img = document.createElement('img');
+    img.src = `50waysofseeing/imgs/${num}.png`;
+    img.onerror = () => console.warn(`Failed to load: ${num}.png`);
+    grid.appendChild(img);
+  });
+</script>
+  </div>
 </body>
 </html>

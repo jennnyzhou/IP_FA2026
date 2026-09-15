@@ -4,23 +4,46 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="gallery-grid">
-<script>
-  const grid = document.currentScript.parentElement;
-  const indices = Array.from({length: 50}, (_, i) => i + 1);
 
-  for (let i = indices.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [indices[i], indices[j]] = [indices[j], indices[i]];
-  }
+    <h1 style="text-align: center; padding-top: 20px;"> 50 ways of seeing!</h1>
+    <div class="gallery-grid"></div>
 
-  indices.forEach(num => {
-    const img = document.createElement('img');
-    img.src = `50waysofseeing/imgs/${num}.png`;
-    img.onerror = () => console.warn(`Failed to load: ${num}.png`);
-    grid.appendChild(img);
-  });
-</script>
+<div class="reflection-wrapper">
+  <button id="reflection-toggle">reflection +</button>
+  <div id="reflection-text" style="display: none;">
+    After visiting the New York Transit Museum, I decided to use an iconic object as
+    the core of this assignment: the MetroCard. When I sat down to start, I somehow just
+    decided to open the Photo Booth app to try to play with how I can make the letters
+    with my hands, which then turned to my body, arms, and face. 
+    In between some of these iterations, I also paused to do what I usually start with — 
+    sketching and drawing, so I started with drawing the different angles using
+    different tools (pencil, pen, marker, etc.) 
+    <br><br>
+    I would love to say I didn't start going a bit crazy by iteration 20 but I think that 
+    really pushed me to think even harder about how else I can depict the MetroCard.
+    But with perfect timing my hunger striked and food became my next medium; I tried to
+    write MetroCard with mayonnaise on my toast while I waited for my eggs to boil, 
+    and although it is illegible, I kind of really like how it looks. Then after playing around some
+    more, I went on a walk to the art supply store, with no specific idea of what I wanted to 
+    get or do. Once I walked in, stickers and clay caught my attention, so I took those home with
+    me and started to make things, which is when things started to get more abstract.
+    <br><br>
+    I started playing around with clay, and thought about the MetroCard as a theme
+    or concept rather than a physical object, which is when I made a clay cardholder, 
+    a fridge magnet, stars, keychains, etc. I also tried playing with star stickers and compositions, 
+    some more successful than others.
+    <br><br>
+    I think my main realization was that at first, although I was being playful with my mediums,
+    the end goal was always to recreate the MetroCard in one way or another, but as the number
+    of iterations increased, I started to think more abstractly and created things that
+    were far away from what the MetroCard physically looks like. I also made the composition
+    of the images random as I feel like even from the beginning, I was jumping between digital
+    and sketching, and there was no proper linear process to my iterations, just new ideas
+    and coming back to old ones. 
+
   </div>
+</div>
+
+  <script src="50.js"></script>
 </body>
 </html>

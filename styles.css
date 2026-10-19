@@ -90,6 +90,7 @@ a {
     color: rgb(255, 238, 0);
 }
 
+
 .sketching {
     width: 200px;
     height: 100px;
@@ -114,6 +115,33 @@ a {
     line-height: 0.8;
     color: rgb(8, 0, 255);
 }
+
+
+.time-capsule {
+    width: 200px;
+    height: 100px;
+    background-color: #dcf5ff;
+    border: 5px solid #ffc4e2;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-left: 7vw;
+    margin-top: 45vh;
+    rotate: -8deg;
+    position: absolute;
+}
+
+.time-capsule h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: -1px;
+    line-height: 0.8;
+    color: rgb(145, 50, 169);
+}
+
 
 .gallery-grid {
   width: 100vw;
